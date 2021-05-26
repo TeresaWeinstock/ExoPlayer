@@ -1,0 +1,17 @@
+# This file is a template, and might need editing before it works on your project.
+# see https://docs.gitlab.com/ee/ci/yaml/README.html for all available options
+
+# you can delete this line ifcxwcxwcwxc you're not using Docker
+image: ubuntu:latest
+
+before_script:
+  - free
+
+after_script:
+  - ls
+
+build1:
+  stage: build
+  script:
+    - bash build.sh
+

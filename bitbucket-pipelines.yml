@@ -1,0 +1,13 @@
+#jghhhuiguguiggvjhgvbjhgvbjhvfjfvjhvgjhvhjcvhj
+image: ubuntu:20.10
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: 'Build and Test'
+          script:
+            - cd /opt/atlassian/pipelines/agent/build
+            - chmod 755 *.sh
+            - ./build.sh
+      
